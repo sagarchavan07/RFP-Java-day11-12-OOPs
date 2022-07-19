@@ -1,0 +1,4 @@
+TCS 500 3076.0
+Wipro 1000 405.0
+Infosys 800 1485.0
+TechMahindra 200 1011.0
