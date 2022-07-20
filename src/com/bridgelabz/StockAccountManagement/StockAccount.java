@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 public class StockAccount implements Account{
     static int totalPortfolioValue;
+    float accountBalance;
     static ArrayList <Stock> StockList= new ArrayList<>();
     static Scanner scanner=new Scanner(System.in);
 
@@ -69,5 +70,16 @@ public class StockAccount implements Account{
         System.out.println("********************\nStock Report: ");
         System.out.println(StockList);
         System.out.println("Total Portfolio Value : "+valueOf());
+    }
+
+    @Override
+    public void debit(float amount) {
+        if (amount <= accountBalance) {
+            accountBalance-=amount;
+            System.out.println("amount debited: "+amount);
+        }else {
+            System.out.println("Debit amount exceeded account balance");
+        }
+        System.out.println("Available Account Balance = "+accountBalance);
     }
 }
