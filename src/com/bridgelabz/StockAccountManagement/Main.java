@@ -37,7 +37,6 @@ public class Main {
                     break;
                 default:
                     System.out.println("Select valid option");
-
             }
         }
 

@@ -10,4 +10,5 @@ public interface Account {
     void sell();
     void save(File file) throws IOException;
     void printReport();
+    void debit(float amount);
 }
